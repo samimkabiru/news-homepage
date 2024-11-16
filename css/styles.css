@@ -126,3 +126,18 @@ p {
 .media__heading:hover {
   color: hsl(5, 85%, 63%);
 }
+
+/* Grids */
+.grid {
+  display: grid;
+}
+
+@media screen and (min-width: 1024px) {
+  .grid--2x2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid--2x3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
