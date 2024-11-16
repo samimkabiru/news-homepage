@@ -22,7 +22,7 @@ h2,
 h3 {
   color: hsl(240, 100%, 5%);
   line-height: 1;
-  margin-bottom: 0.5rem;
+  margin: 0.5rem 0;
 }
 
 h1 {
@@ -87,4 +87,30 @@ p {
     margin-right: 1.5rem;
     margin-bottom: 0;
   }
+}
+
+/* Media */
+.media {
+  display: flex;
+}
+
+.media,
+.media__heading {
+  font-size: 1rem;
+}
+
+.media__image {
+  width: 5rem;
+  height: 7rem;
+  object-fit: cover;
+}
+
+.media__body {
+  margin-left: 1rem;
+}
+
+.media__serial-number {
+  margin-top: 0;
+  color: hsl(5, 85%, 63%);
+  font-size: 1.5rem;
 }
