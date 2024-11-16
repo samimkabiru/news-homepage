@@ -46,3 +46,27 @@ p {
     font-size: 3rem;
   }
 }
+
+/* Button */
+.btn {
+  border: 0;
+  font-size: 1.1rem;
+  font-weight: bold;
+  outline: 0;
+  padding: 0.8rem 2rem;
+  text-align: center;
+  text-wrap: nowrap;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.btn--primary {
+  background: hsl(5, 85%, 63%);
+  transition: background 0.2s, color 0.2s;
+}
+
+.btn--primary:hover,
+.btn--primary:focus {
+  background: hsl(240, 100%, 5%);
+  color: #fff;
+}
