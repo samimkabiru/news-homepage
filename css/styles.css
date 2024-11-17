@@ -92,6 +92,7 @@ p {
 /* Media */
 .media {
   display: flex;
+  margin-bottom: 1.5rem;
 }
 
 .media,
@@ -125,6 +126,12 @@ p {
 
 .media__heading:hover {
   color: hsl(5, 85%, 63%);
+}
+
+@media screen and (min-width: 1024px) {
+  .media {
+    margin-bottom: 0;
+  }
 }
 
 /* Grids */
