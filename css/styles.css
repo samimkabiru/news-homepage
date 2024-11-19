@@ -118,7 +118,6 @@ p {
 .media__heading {
   font-weight: bold;
   color: hsl(240, 100%, 5%);
-  cursor: pointer;
   transition: color 0.2s;
   text-decoration: none;
 }
@@ -153,7 +152,7 @@ p {
 .news {
   background: hsl(240, 100%, 5%);
   padding: 1.5rem;
-  max-width: 45rem;
+  max-width: 60rem;
   margin: 0 auto;
 }
 
@@ -178,7 +177,6 @@ p {
   text-transform: capitalize;
   font-weight: bold;
   font-size: 1.7rem;
-  cursor: pointer;
   transition: color 0.2s;
   text-decoration: none;
   margin-bottom: 0.8rem;
