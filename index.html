@@ -14,20 +14,113 @@
     />
   </head>
   <body>
-    <nav class="nav nav--collapsed">
-      <a href="/"><img src="images/logo.svg" alt="Logo" /></a>
-      <div class="nav__icons">
-        <img class="nav__icon" src="images/icon-menu-close.svg" alt="" />
-        <img class="nav__icon" src="images/icon-menu.svg" alt="" />
+    <header>
+      <nav class="nav nav--collapsed">
+        <a href="/"><img src="images/logo.svg" alt="Logo" /></a>
+        <div class="nav__icons">
+          <img class="nav__icon" src="images/icon-menu-close.svg" alt="" />
+          <img class="nav__icon" src="images/icon-menu.svg" alt="" />
+        </div>
+        <ul class="list list--inline nav__list">
+          <li class="list__item nav__item"><a href="#">Home</a></li>
+          <li class="list__item nav__item"><a href="#">New</a></li>
+          <li class="list__item nav__item"><a href="#">Popular</a></li>
+          <li class="list__item nav__item"><a href="#">Trending</a></li>
+          <li class="list__item nav__item"><a href="#">Categories</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="grid grid--2x3 main">
+      <div class="block block-card">
+        <section class="card">
+          <picture class="card__image">
+            <source
+              media="(max-width: 700px)"
+              srcset="images/image-web-3-mobile.jpg"
+            />
+            <source
+              media="(min-width: 701px)"
+              srcset="images/image-web-3-desktop.jpg"
+            />
+            <img src="images/image-web-3-mobile.jpg" alt="Shapes" />
+          </picture>
+          <div class="grid grid--2x2 card__body">
+            <h1>The Bright Future of Web 3.0?</h1>
+            <div>
+              <p class="card__text">
+                We dive into the next evolution of the web that claims to put
+                the power of the platforms back into the hands of the people.
+                But is it really fulfilling its promise?
+              </p>
+              <button class="btn btn--primary">read more</button>
+            </div>
+          </div>
+        </section>
       </div>
-      <ul class="list list--inline nav__list">
-        <li class="list__item nav__item"><a href="#">Home</a></li>
-        <li class="list__item nav__item"><a href="#">New</a></li>
-        <li class="list__item nav__item"><a href="#">Popular</a></li>
-        <li class="list__item nav__item"><a href="#">Trending</a></li>
-        <li class="list__item nav__item"><a href="#">Categories</a></li>
-      </ul>
-    </nav>
+      <div class="block block-news">
+        <section class="news">
+          <h2 class="news__latest">New</h2>
+          <article class="news__article">
+            <a class="news__heading" href="#">hydrogen vs electrical cars</a>
+            <p>will hydrogen-fueled cars ever catch up to EVs?</p>
+          </article>
+          <article class="news__article">
+            <a class="news__heading" href="#">The Downsides of AI Artistry</a>
+            <p>
+              What are the possible adverse effects of on-demand AI image
+              generation?
+            </p>
+          </article>
+          <article class="news__article">
+            <a class="news__heading" href="#">Is VC Funding Drying Up?</a>
+            <p>
+              Private funding by VC firms is down 50% YOY. We take a look at
+              what that means.
+            </p>
+          </article>
+        </section>
+      </div>
+      <div class="block block-old-news">
+        <section class="grid grid--2x3 old-news">
+          <div class="media">
+            <img
+              src="images/image-retro-pcs.jpg"
+              alt="retro PC"
+              class="media__image"
+            />
+            <div class="media__body">
+              <h2 class="media__serial-number">01</h2>
+              <a class="media__heading" href="#">Reviving Retro PCs</a>
+              <p>What happens when old PCs are given modern upgrades?</p>
+            </div>
+          </div>
+          <div class="media">
+            <img
+              src="images/image-top-laptops.jpg"
+              alt="retro PC"
+              class="media__image"
+            />
+            <div class="media__body">
+              <h2 class="media__serial-number">02</h2>
+              <a class="media__heading" href="#">Top 10 Laptops of 2022</a>
+              <p>Our best picks for various needs and budgets.</p>
+            </div>
+          </div>
+          <div class="media">
+            <img
+              src="images/image-gaming-growth.jpg"
+              alt="retro PC"
+              class="media__image"
+            />
+            <div class="media__body">
+              <h2 class="media__serial-number">03</h2>
+              <a class="media__heading" href="#">The Growth of Gaming</a>
+              <p>How the pandemic has sparked fresh opportunities</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
     <script src="js/main.js"></script>
   </body>
 </html>

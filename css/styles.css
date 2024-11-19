@@ -195,6 +195,10 @@ p {
   margin-bottom: 2rem;
 }
 
+.card__body {
+  column-gap: 2rem;
+}
+
 /* Blocks */
 .block {
   padding: 1.5rem;
@@ -286,5 +290,27 @@ p {
 
   .nav__icons {
     display: none;
+  }
+}
+
+/* Final Touches */
+@media screen and (min-width: 1024px) {
+  .main {
+    padding-top: 7.7rem;
+  }
+
+  .block-card {
+    grid-column: 1 / span 2;
+  }
+
+  .block-old-news {
+    grid-column: 1 / span 3;
+  }
+
+  .block-news {
+    padding-left: 0;
+  }
+  .old-news {
+    column-gap: 1rem;
   }
 }
