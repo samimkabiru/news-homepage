@@ -14,26 +14,20 @@
     />
   </head>
   <body>
-    <section class="news">
-      <h2 class="news__latest">New</h2>
-      <article class="news__article">
-        <a class="news__heading" href="#">hydrogen vs electrical cars</a>
-        <p>will hydrogen-fueled cars ever catch up to EVs?</p>
-      </article>
-      <article class="news__article">
-        <a class="news__heading" href="#">The Downsides of AI Artistry</a>
-        <p>
-          What are the possible adverse effects of on-demand AI image
-          generation?
-        </p>
-      </article>
-      <article class="news__article">
-        <a class="news__heading" href="#">Is VC Funding Drying Up?</a>
-        <p>
-          Private funding by VC firms is down 50% YOY. We take a look at what
-          that means.
-        </p>
-      </article>
-    </section>
+    <nav class="nav nav--collapsed">
+      <a href="/"><img src="images/logo.svg" alt="Logo" /></a>
+      <div class="nav__icons">
+        <img class="nav__icon" src="images/icon-menu-close.svg" alt="" />
+        <img class="nav__icon" src="images/icon-menu.svg" alt="" />
+      </div>
+      <ul class="list list--inline nav__list">
+        <li class="list__item nav__item"><a href="#">Home</a></li>
+        <li class="list__item nav__item"><a href="#">New</a></li>
+        <li class="list__item nav__item"><a href="#">Popular</a></li>
+        <li class="list__item nav__item"><a href="#">Trending</a></li>
+        <li class="list__item nav__item"><a href="#">Categories</a></li>
+      </ul>
+    </nav>
+    <script src="js/main.js"></script>
   </body>
 </html>

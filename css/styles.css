@@ -78,7 +78,6 @@ p {
 /* Lists */
 .list {
   list-style: none;
-  padding-left: 0;
 }
 
 .list__item {
@@ -194,4 +193,98 @@ p {
 
 .card__text {
   margin-bottom: 2rem;
+}
+
+/* Blocks */
+.block {
+  padding: 1.5rem;
+}
+
+/* Navigation Bar */
+.nav {
+  align-items: center;
+  background: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  left: 0;
+  padding: 1.5rem;
+  position: fixed;
+  right: 0;
+  width: auto;
+}
+
+.nav__icons {
+  width: 40px;
+  height: 32px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav__list {
+  background: #fff;
+  box-shadow: -30rem 0 hsla(240, 100%, 5%, 0.5);
+  height: 100vh;
+  margin: 0 0 0 15rem;
+  padding: 15rem 0 0 2rem;
+  position: absolute;
+  top: 0;
+  transition: all 0.2s;
+  width: 100%;
+  z-index: -1;
+}
+
+.nav__item {
+  margin-bottom: 2rem;
+}
+
+.nav__icon:nth-of-type(2) {
+  max-width: 0;
+  position: absolute;
+}
+
+.nav__item a {
+  text-decoration: none;
+  color: hsl(240, 100%, 5%);
+}
+
+.nav__item:hover a {
+  color: hsl(5, 85%, 63%);
+}
+
+.nav--collapsed .nav__list {
+  padding: 0;
+  box-shadow: none;
+  overflow: hidden;
+  max-height: 0;
+}
+
+.nav--collapsed .nav__icon:nth-of-type(2) {
+  max-width: 100%;
+}
+.nav--collapsed .nav__icon:nth-of-type(1) {
+  max-width: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .nav__list {
+    box-shadow: none;
+    height: auto;
+    margin-left: 0;
+    padding: 0;
+    position: initial;
+    transition: all 0.3s;
+    width: auto;
+  }
+
+  .nav--collapsed .nav__list {
+    overflow: visible;
+    max-height: 100%;
+  }
+
+  .nav__icons {
+    display: none;
+  }
 }
